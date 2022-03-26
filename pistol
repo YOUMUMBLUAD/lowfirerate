@@ -1,0 +1,10 @@
+if not tool then return print("Equip The Tool To Apply Mods!") end
+
+    local script = tool:FindFirstChild("Pistol")
+
+    if script then
+        local senv = getsenv(script)
+
+        debug.setconstant(senv.OnFire, 250, number)
+    end
+end
